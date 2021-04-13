@@ -29,3 +29,6 @@ modifying the profile files located at:
 - On unix based machines
     - $ `rustup self uninstall`
 
+
+# To compile
+- $ r`ustc <file-name>.rs`
