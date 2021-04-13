@@ -32,3 +32,27 @@ modifying the profile files located at:
 
 # To compile
 - $ r`ustc <file-name>.rs`
+
+# To create a new project with Cargo
+- $ `cargo new project_name`
+    - This will create a project which contains the following:
+        - Cargo.toml
+            - configuration file in `Tom’s Obvious, Minimal Language` format   
+        - src/main.rs
+            - a sample test file
+
+# To build
+- $ `cargo build`
+    - creates a binary in `target/debug` directory with the project's name
+    - Run `./target/debug/<project_name>` to execute
+
+# To compile code and run
+- $ `cargo run`
+
+# To check
+- $ `cargo check`
+    - This checks whether the code is compilable or not 
+    - This is much faster than `cargo build`
+
+# Build for release
+- $ `cargo build --release`
