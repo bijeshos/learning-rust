@@ -50,7 +50,10 @@ modifying the profile files located at:
     - Run `./target/debug/<project_name>` to execute
 
 # To compile code and run
+- $ `cargo run`
+  - To run without any arguments
 - $ `cargo run arg1 arg2`
+  -  - To run without with arguments (e.g.: `arg1` and `arg2`)
 
 # To check
 - $ `cargo check`
