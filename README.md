@@ -34,7 +34,7 @@ modifying the profile files located at:
 
 
 # To compile
-- $ r`ustc <file-name>.rs`
+- $ `rustc <file-name>.rs`
 
 # To create a new project with Cargo
 - $ `cargo new project_name`
@@ -50,7 +50,7 @@ modifying the profile files located at:
     - Run `./target/debug/<project_name>` to execute
 
 # To compile code and run
-- $ `cargo run`
+- $ `cargo run arg1 arg2`
 
 # To check
 - $ `cargo check`
