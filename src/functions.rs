@@ -44,20 +44,21 @@ fn function_with_one_return_value() -> i32 {
 
 fn function_with_args_and_one_return_value(a: i32, b: f32, c: char) -> i32 {
     println!("inside function_with_return_value");
+    println!("input args : a : {}, b: {}, c: {}", a, b, c);
+    let a1 = 10;
+    let a2 = 20;
 
-    let a = 10;
-    let b = 20;
-
-    //below returns sum of a and b
-    a + b
+    //below returns sum of a1 and a2
+    a1 + a2
 }
 
 fn function_with_args_and_two_return_value(a: i32, b: f32, c: char) -> (i32, i32) {
     println!("inside function_with_args_and_two_return_value");
 
-    let a = 10;
-    let b = 20;
+    println!("input args : a : {}, b: {}, c: {}", a, b, c);
+    let a1 = 10;
+    let a2 = 20;
 
     //below returns a tuple containing a and b
-    (a, b)
+    (a1, a2)
 }
