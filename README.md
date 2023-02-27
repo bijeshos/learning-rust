@@ -1,5 +1,5 @@
 # Learning Rust
-Programs and materials used for Rust learning
+Programs and materials used for Rust learning and training.
 
 # Repo Structure
 All examples are available inside the `src` directory. This project is created as both binary crate and library crate. That means, both `main.rs` and `lib.rs` files are present. 
