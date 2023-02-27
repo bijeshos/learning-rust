@@ -8,16 +8,16 @@ All examples are available inside the `src` directory. This project is created a
 For ease of reference, source code for each area is grouped under separate packages. Each package has a wrapper function ( in the format `run_*_examples`), which acts as an entry point to the examples of that particular package. 
 Each example is wrapped inside a separate function that can be executed independently (except in a few cases, which are explicitly mentioned in the code )
 
-# Examples covered
+# Examples Covered
 
 At the moment, following topics/examples are covered:
 
 |Topic|Package|File|Examples|
 |--|--|--|--|
-|Variable declaration|`variables`|`variables.rs`|<ul><li>Immutable</li><li>Mutable</li><li>Constant</li><li>Shadowing</li></ul> |
+|Variable Declaration|`variables`|`variables.rs`|<ul><li>Immutable variable</li><li>Mutable variable</li><li>Constant</li><li>Shadowing</li></ul> |
 |Scalar Data Types|`data_types`|`data_types.rs`|<ul><li>Unsigned Integer</li><li>Signed Integer</li><li>Float</li><li>Boolean</li><li>Character</li></ul>|
 |Compound Data Types|`data_types`|`data_types.rs`|<ul><li>Tuple</li><li>Array</li></ul>|
-|Functions|`functions`|`functions.rs`|<ul><li>Function without args and return value</li><li>Public function</li><li>Private function</li><li>Function with one argument and single return value</li><li>Function with multiple arguments and multiple return values</li></ul>|
+|Functions|`functions`|`functions.rs`|<ul><li>Function without args and return value</li><li>Public function</li><li>Private function</li><li>Function with single argument and single return value</li><li>Function with multiple arguments and multiple return values</li></ul>|
 |Control Flows|`controle_flows`|`controle_flows.rs`|<ul><li>if-else</li></ul>|
 
 Following topics/examples would be added soon:
