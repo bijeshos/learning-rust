@@ -63,4 +63,8 @@ modifying the profile files located at:
 # Build for release
 - $ `cargo build --release`
 
-*work in progress*
+# Comment style
+- The comments in the code is usually kept in separate line above the line it's annotating (exceptions would be mentioned explicitly)
+
+- 
+- # *work in progress*
