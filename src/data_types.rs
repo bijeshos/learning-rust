@@ -8,7 +8,7 @@ pub fn scalar_data_type_examples() {
 }
 
 fn character() {
-//character types : single quotes, four bytes in size, represent unicode scalar value
+    //character types : single quotes, four bytes in size, represent unicode scalar value
     let ch: char = 'a';
 
     println!("char : {}", ch);
@@ -16,7 +16,7 @@ fn character() {
 }
 
 fn boolean() {
-// boolean types
+    // boolean types
     let bool_false: bool = false;
     let bool_true: bool = true;
 
@@ -26,7 +26,7 @@ fn boolean() {
 }
 
 fn float() {
-//float
+    //float
     //single precision
     let float_f32: f32 = 3.0;
 
@@ -39,7 +39,7 @@ fn float() {
 }
 
 fn signed_integer() {
-// integers : signed
+    // integers : signed
     let signed_int_8bit: u8 = 31;
     let signed_int_16bit: u16 = 31;
     let signed_int_32bit: u32 = 31;
@@ -58,7 +58,7 @@ fn signed_integer() {
 }
 
 fn unsigned_integer() {
-// integers : unsigned
+    // integers : unsigned
     let unsigned_int_8bit: i8 = 31;
     let unsigned_int_16bit: i16 = 31;
     let unsigned_int_32bit: i32 = 31;
