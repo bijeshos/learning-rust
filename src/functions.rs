@@ -1,12 +1,8 @@
-//a private function that cannot be called outside of the current module
-fn private_function() {
-    println!("inside a private function")
-}
-
+//a public function that can be called outside of the current module
 pub fn function_examples() {
     simple_public_function();
 
-    //this function called be from within this module
+    //this function can only be called from within this module
     private_function();
 
     function_with_args_and_no_returns(1, 2.0, 'a');
@@ -19,6 +15,12 @@ pub fn function_examples() {
 
     let (z1, z2) = function_with_args_and_two_return_value(1, 2.0, 'a');
     println!("z1: {}, z2 : {}", z1, z2);
+}
+
+// a private function that cannot be called outside of the current module
+// unless specified with pub keyword, functions are private
+fn private_function() {
+    println!("inside a private function")
 }
 
 pub fn simple_public_function() {
