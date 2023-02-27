@@ -1,23 +1,45 @@
 pub fn scalar_data_type_examples() {
     println!("-----------");
-    // integers : unsigned
-    let unsigned_int_8bit: i8 = 31;
-    let unsigned_int_16bit: i16 = 31;
-    let unsigned_int_32bit: i32 = 31;
-    let unsigned_int_64bit: i64 = 31;
-    let unsigned_int_128bit: i128 = 31;
-    //below depends on the architecture of the machine the program runs on
-    let unsigned_int_arch: isize = 31;
+    unsigned_integer();
+    signed_integer();
+    float();
+    boolean();
+    character();
+}
 
-    println!("unsigned_int_8bit : {}", unsigned_int_8bit);
-    println!("unsigned_int_16bit : {}", unsigned_int_16bit);
-    println!("unsigned_int_32bit : {}", unsigned_int_32bit);
-    println!("unsigned_int_64bit : {}", unsigned_int_64bit);
-    println!("unsigned_int_128bit : {}", unsigned_int_128bit);
-    println!("unsigned_int_arch : {}", unsigned_int_arch);
+fn character() {
+//character types : single quotes, four bytes in size, represent unicode scalar value
+    let ch: char = 'a';
+
+    println!("char : {}", ch);
     println!("-----------");
+}
 
-    // integers : signed
+fn boolean() {
+// boolean types
+    let bool_false: bool = false;
+    let bool_true: bool = true;
+
+    println!("bool_false : {}", bool_false);
+    println!("bool_true : {}", bool_true);
+    println!("-----------");
+}
+
+fn float() {
+//float
+    //single precision
+    let float_f32: f32 = 3.0;
+
+    //double precision
+    let float_f64: f64 = 11.20;
+
+    println!("float_f32 : {}", float_f32);
+    println!("float_f64 : {}", float_f64);
+    println!("-----------");
+}
+
+fn signed_integer() {
+// integers : signed
     let signed_int_8bit: u8 = 31;
     let signed_int_16bit: u16 = 31;
     let signed_int_32bit: u32 = 31;
@@ -33,30 +55,24 @@ pub fn scalar_data_type_examples() {
     println!("signed_int_128bit : {}", signed_int_128bit);
     println!("signed_int_arch : {}", signed_int_arch);
     println!("-----------");
+}
 
-    //float
-    //single precision
-    let float_f32: f32 = 3.0;
+fn unsigned_integer() {
+// integers : unsigned
+    let unsigned_int_8bit: i8 = 31;
+    let unsigned_int_16bit: i16 = 31;
+    let unsigned_int_32bit: i32 = 31;
+    let unsigned_int_64bit: i64 = 31;
+    let unsigned_int_128bit: i128 = 31;
+    //below depends on the architecture of the machine the program runs on
+    let unsigned_int_arch: isize = 31;
 
-    //double precision
-    let float_f64: f64 = 11.20;
-
-    println!("float_f32 : {}", float_f32);
-    println!("float_f64 : {}", float_f64);
-    println!("-----------");
-
-    // boolean types
-    let bool_false: bool = false;
-    let bool_true: bool = true;
-
-    println!("bool_false : {}", bool_false);
-    println!("bool_true : {}", bool_true);
-    println!("-----------");
-
-    //character types : single quotes, four bytes in size, represent unicode scalar value
-    let ch: char = 'a';
-
-    println!("char : {}", ch);
+    println!("unsigned_int_8bit : {}", unsigned_int_8bit);
+    println!("unsigned_int_16bit : {}", unsigned_int_16bit);
+    println!("unsigned_int_32bit : {}", unsigned_int_32bit);
+    println!("unsigned_int_64bit : {}", unsigned_int_64bit);
+    println!("unsigned_int_128bit : {}", unsigned_int_128bit);
+    println!("unsigned_int_arch : {}", unsigned_int_arch);
     println!("-----------");
 }
 
