@@ -98,9 +98,8 @@ modifying the profile files located at:
 ## Uninstall
 - To uninstall `rustup` (on unix based machines)
     - $ `rustup self uninstall`
-    - 
 # Comment style
-- The comments in the code is usually kept in separate line above the line it's annotating (exceptions would be mentioned explicitly)
+- The comments in the code are usually kept in separate line above the line it's annotating (exceptions would be mentioned explicitly)
 
 # *work in progress*
 - Note: This is a work-in-progress repo. More examples would be added soon. 
