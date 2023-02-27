@@ -1,4 +1,4 @@
-pub fn basic_variables() {
+pub fn variable_examples() {
     println!("-----------");
 
     //immutable variable (variable are immutable by default)
