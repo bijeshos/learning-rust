@@ -1,4 +1,4 @@
-pub fn scalar_data_types() {
+pub fn scalar_data_type_examples() {
     println!("-----------");
     // integers : unsigned
     let unsigned_int_8bit: i8 = 31;
@@ -60,7 +60,7 @@ pub fn scalar_data_types() {
     println!("-----------");
 }
 
-pub fn compound_data_types() {
+pub fn compound_data_type_examples() {
     println!("-----------");
     //tuples : group of values with different data types; has fixed length
     let tup1: (i32, f64, u8) = (500, 6.8, 8);
