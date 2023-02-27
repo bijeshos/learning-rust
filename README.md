@@ -63,8 +63,28 @@ modifying the profile files located at:
 # Build for release
 - $ `cargo build --release`
 
+
+# Examples covered
+
+#### Following are the examples at the moment:
+- variables
+- data types
+- functions
+- control flows
+#### Following examples would be added soon:
+- memory management
+- slices
+- enums
+- error handling
+- generics
+- io
+- smart pointers
+- concurrency
+- unsafe
+- automated tests
+
 # Comment style
 - The comments in the code is usually kept in separate line above the line it's annotating (exceptions would be mentioned explicitly)
 
-- 
+
 - # *work in progress*
