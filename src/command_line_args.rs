@@ -1,4 +1,4 @@
-//TODO: Cod in this file would be updated/cleaned-up later.
+//TODO: Code in this file would be updated/cleaned-up later.
 // Below code has been commented out temporarily
 //use std::env::var;
 /*use std::error::Error;
