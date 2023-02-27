@@ -1,4 +1,4 @@
-pub fn variable_examples() {
+pub fn run_variable_examples() {
     println!("-----------");
     immutable_variable();
     mutable_variable();

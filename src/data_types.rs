@@ -1,4 +1,4 @@
-pub fn scalar_data_type_examples() {
+pub fn run_scalar_data_type_examples() {
     println!("-----------");
     unsigned_integer();
     signed_integer();
@@ -76,7 +76,7 @@ fn unsigned_integer() {
     println!("-----------");
 }
 
-pub fn compound_data_type_examples() {
+pub fn run_compound_data_type_examples() {
     println!("-----------");
     //tuples : group of values with different data types; has fixed length
     let tup1: (i32, f64, u8) = (500, 6.8, 8);

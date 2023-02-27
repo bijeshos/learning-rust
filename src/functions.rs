@@ -1,5 +1,6 @@
 //a public function that can be called outside of the current module
-pub fn function_examples() {
+pub fn run_function_examples() {
+    println!("-----------");
     simple_public_function();
 
     //this function can only be called from within this module
