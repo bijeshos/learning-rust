@@ -18,7 +18,7 @@ At the moment, following topics/examples are covered:
 |Scalar Data Types|`data_types`|`data_types.rs`|<ul><li>Unsigned Integer</li><li>Signed Integer</li><li>Float</li><li>Boolean</li><li>Character</li></ul>|
 |Compound Data Types|`data_types`|`data_types.rs`|<ul><li>Tuple</li><li>Array</li></ul>|
 |Functions|`functions`|`functions.rs`|<ul><li>Function without args and return value</li><li>Public function</li><li>Private function</li><li>Function with single argument and single return value</li><li>Function with multiple arguments and multiple return values</li></ul>|
-|Control Flows|`controle_flows`|`controle_flows.rs`|<ul><li>if-else</li></ul>|
+|Control Flows|`controle_flows`|`controle_flows.rs`|<ul><li>if</li><li>if-else</li><li>if with let</li><li>loop with counter</li><li>loop with label</li><li>while</li><li>for</li></ul>|
 
 Following topics/examples would be added soon:
 
@@ -103,3 +103,6 @@ modifying the profile files located at:
 
 # *work in progress*
 - Note: This is a work-in-progress repo. More examples would be added soon. 
+
+# References
+- The Rust Book : https://doc.rust-lang.org/book/title-page.html
