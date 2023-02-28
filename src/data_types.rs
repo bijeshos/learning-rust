@@ -1,42 +1,44 @@
+use crate::common;
+
 pub fn run_scalar_data_type_examples() {
-    println!("----------- scalar data type examples : begin -----------\n");
+    common::print_topic_start_message("scalar data type");
     unsigned_integer();
     signed_integer();
     float();
     boolean();
     character();
-    println!("----------- scalar data type examples : end -----------\n");
+    common::print_topic_end_message("scalar data type");
 }
 
 pub fn run_compound_data_type_examples() {
-    println!("----------- compound data type examples : begin -----------\n");
+    common::print_topic_start_message("compound data type");
     tuple_example();
     array_example();
-    println!("----------- compound data type examples : end -----------\n");
+    common::print_topic_end_message("compound data type");
 }
 
 fn character() {
-    println!("**  character example : begin");
+    common::print_example_start_message("character");
     //character types : single quotes, four bytes in size, represent unicode scalar value
     let ch: char = 'a';
 
     println!("char : {}", ch);
-    println!("**  character example : end\n");
+    common::print_example_end_message("character");
 }
 
 fn boolean() {
-    println!("**  boolean example : begin");
+    common::print_example_start_message("boolean");
     // boolean types
     let bool_false: bool = false;
     let bool_true: bool = true;
 
     println!("bool_false : {}", bool_false);
     println!("bool_true : {}", bool_true);
-    println!("**  boolean example : end\n");
+    common::print_example_end_message("boolean");
 }
 
 fn float() {
-    println!("**  float example : begin");
+    common::print_example_start_message("float");
     //single precision
     let float_f32: f32 = 3.0;
 
@@ -45,12 +47,12 @@ fn float() {
 
     println!("float_f32 : {}", float_f32);
     println!("float_f64 : {}", float_f64);
-    println!("**  float example : end\n");
+    common::print_example_end_message("float");
 
 }
 
 fn signed_integer() {
-    println!("**  signed integer example : begin");
+    common::print_example_start_message("signed integer");
     // integers : signed
     let signed_int_8bit: u8 = 31;
     let signed_int_16bit: u16 = 31;
@@ -66,11 +68,11 @@ fn signed_integer() {
     println!("signed_int_64bit : {}", signed_int_64bit);
     println!("signed_int_128bit : {}", signed_int_128bit);
     println!("signed_int_arch : {}", signed_int_arch);
-    println!("**  signed integer example : end\n");
+    common::print_example_end_message("signed integer");
 }
 
 fn unsigned_integer() {
-    println!("**  unsigned integer example : begin");
+    common::print_example_start_message("unsigned integer");
     // integers : unsigned
     let unsigned_int_8bit: i8 = 31;
     let unsigned_int_16bit: i16 = 31;
@@ -86,13 +88,13 @@ fn unsigned_integer() {
     println!("unsigned_int_64bit : {}", unsigned_int_64bit);
     println!("unsigned_int_128bit : {}", unsigned_int_128bit);
     println!("unsigned_int_arch : {}", unsigned_int_arch);
-    println!("** unsigned integer example : end\n");
+    common::print_example_end_message("unsigned integer");
 }
 
 
 
 fn tuple_example() {
-    println!("**  tuple example : begin");
+    common::print_example_start_message("tuple");
     //tuples : group of values with different data types; has fixed length
     let tup1: (i32, f64, u8) = (500, 6.8, 8);
     let tup2 = (501, 7.8, 9);
@@ -116,11 +118,11 @@ fn tuple_example() {
     println!("x : {}, y: {}, z: {}", x, y, z);
 
     println!("k (unit) : {:?}", k);
-    println!("**  tuple example : end\n");
+    common::print_example_end_message("tuple");
 }
 
 fn array_example() {
-    println!("**  array example : begin");
+    common::print_example_start_message("array");
     //array : group of values with same data types; has fixed length; data is allocated to stack; not heap
     let arr1 = [0, 2, 3, 4, 5];
     let arr2: [i32; 5] = [6, 7, 8, 9, 10];
@@ -134,5 +136,5 @@ fn array_example() {
     println!("arr3 : {:?}", arr3);
     println!("q1_months : {:?}", q1_months);
     println!("second month : {}", q1_months[1]);
-    println!("**  array example : end\n");
+    common::print_example_end_message("array");
 }

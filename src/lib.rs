@@ -15,6 +15,7 @@ mod smart_pointers;
 mod concurrency;
 mod unsafe_pkg;
 mod command_line_args;
+mod common;
 
 pub fn run_examples() {
     variables::run_variable_examples();

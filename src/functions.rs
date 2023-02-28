@@ -1,6 +1,8 @@
+use crate::common;
+
 //a public function that can be called outside of the current module
 pub fn run_function_examples() {
-    println!("----------- function examples : begin -----------\n");
+    common::print_topic_start_message("function");
     simple_public_function();
 
     //this function can only be called from within this module
@@ -16,7 +18,7 @@ pub fn run_function_examples() {
 
     let (z1, z2) = function_with_args_and_two_return_value(1, 2.0, 'a');
     println!("z1: {}, z2 : {}", z1, z2);
-    println!("----------- function examples : end -----------\n");
+    common::print_topic_end_message("function");
 }
 
 // a private function that cannot be called outside of the current module
