@@ -10,12 +10,11 @@ mod pattern_matching;
 mod collections;
 mod error_handling;
 mod generics;
-
-mod command_line_args;
 mod io;
 mod smart_pointers;
 mod concurrency;
 mod unsafe_pkg;
+mod command_line_args;
 
 pub fn run_examples() {
     variables::run_variable_examples();
@@ -34,7 +33,7 @@ pub fn run_examples() {
     pattern_matching::run_pattern_matching_examples();
     collections::run_collections_examples();
     error_handling::run_error_handling_examples();
-    generics::run_generics_examples()
+    generics::run_generics_examples();
     io::run_io_examples();
     smart_pointers::run_smart_pointers_examples();
     concurrency::run_concurrency_examples();
