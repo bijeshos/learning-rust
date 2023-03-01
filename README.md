@@ -19,6 +19,7 @@ At the moment, following topics/examples are covered:
 |Compound Data Types|`data_types`|`data_types.rs`|<ul><li>Tuple</li><li>Array</li></ul>|
 |Functions|`functions`|`functions.rs`|<ul><li>Function without args and return value</li><li>Public function</li><li>Private function</li><li>Function with single argument and single return value</li><li>Function with multiple arguments and multiple return values</li></ul>|
 |Control Flows|`controle_flows`|`controle_flows.rs`|<ul><li>if</li><li>if-else</li><li>if with let</li><li>loop with counter</li><li>loop with label</li><li>while</li><li>for</li></ul>|
+|Vector|`vectors`|`vectors.rs`|<ul><li>Declaration</li><li>get/push</li><li>Iteration</li><li>Using enum</li></ul>|
 
 Following topics/examples would be added soon:
 
@@ -106,3 +107,5 @@ modifying the profile files located at:
 
 # References
 - The Rust Book : https://doc.rust-lang.org/book/title-page.html
+- Rust Editions : https://doc.rust-lang.org/edition-guide/editions/index.html
+- API guidelines checklist : https://rust-lang.github.io/api-guidelines/checklist.html
