@@ -1,7 +1,7 @@
-use crate::common;
+use crate::log;
 
 pub fn run_control_flow_examples() {
-    common::print_topic_start_message("control flow");
+    log::begin_topic("control flow");
     if_example();
     if_else_example();
     if_with_let();
@@ -9,22 +9,22 @@ pub fn run_control_flow_examples() {
     loop_with_label();
     while_example();
     for_example();
-    common::print_topic_end_message("control flow");
+    log::end_topic("control flow");
 }
 
 fn if_example() {
-    common::print_example_start_message("if");
+    log::start_example("if");
     let n = 3;
     if n < 5 {
         println!("n is less than 5");
     } else {
         println!("n is greater than 5")
     }
-    common::print_example_end_message("if");
+    log::end_example("if");
 }
 
 fn if_else_example() {
-    common::print_example_start_message("if-else");
+    log::start_example("if-else");
     let n = 6;
 
     if n % 4 == 0 {
@@ -39,11 +39,11 @@ fn if_else_example() {
         //this won't get executed
         println!("n is not divisible by 2, 3 or 4")
     }
-    common::print_example_end_message("if-else");
+    log::end_example("if-else");
 }
 
 fn if_with_let() {
-    common::print_example_start_message("if-with-let");
+    log::start_example("if-with-let");
     let condition = true;
     let number = if condition {
         5
@@ -51,11 +51,11 @@ fn if_with_let() {
         6
     };
     println!("number: {}", number);
-    common::print_example_end_message("if-with-let");
+    log::end_example("if-with-let");
 }
 
 fn loop_with_counter() {
-    common::print_example_start_message("loop-with-counter");
+    log::start_example("loop-with-counter");
     let mut counter = 0;
 
     let result = loop {
@@ -65,11 +65,11 @@ fn loop_with_counter() {
         }
     };
     println!("the result is: {}", result);
-    common::print_example_end_message("loop-with-counter");
+    log::end_example("loop-with-counter");
 }
 
 fn loop_with_label() {
-    common::print_example_start_message("loop-with-label");
+    log::start_example("loop-with-label");
     let mut count = 0;
     'counting_up: loop {
         println!("count");
@@ -87,11 +87,11 @@ fn loop_with_label() {
         count += 1;
     }
     println!("end count :{}", count);
-    common::print_example_end_message("loop-with-label");
+    log::end_example("loop-with-label");
 }
 
 fn while_example() {
-    common::print_example_start_message("while");
+    log::start_example("while");
 
     let mut number = 5;
     while number > 0 {
@@ -99,11 +99,11 @@ fn while_example() {
         number -= 1;
     }
 
-    common::print_example_end_message("while");
+    log::end_example("while");
 }
 
 fn for_example() {
-    common::print_example_start_message("for");
+    log::start_example("for");
 
     let a = [1,2,3,4,5];
     for element in a{
@@ -114,5 +114,5 @@ fn for_example() {
         println!("{number}!");
     }*/
 
-    common::print_example_end_message("for");
+    log::end_example("for");
 }

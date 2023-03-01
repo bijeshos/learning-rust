@@ -1,7 +1,7 @@
-use crate::common;
+use crate::log;
 
 pub fn run_sub_module_ab_examples() {
-    common::print_topic_start_message("sub_module_ab");
+    log::begin_topic("sub_module_ab");
 
-    common::print_topic_end_message("sub_module_ab");
+    log::end_topic("sub_module_ab");
 }

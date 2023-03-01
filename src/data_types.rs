@@ -1,44 +1,44 @@
-use crate::common;
+use crate::log;
 
 pub fn run_scalar_data_type_examples() {
-    common::print_topic_start_message("scalar data type");
+    log::begin_topic("scalar data type");
     unsigned_integer();
     signed_integer();
     float();
     boolean();
     character();
-    common::print_topic_end_message("scalar data type");
+    log::end_topic("scalar data type");
 }
 
 pub fn run_compound_data_type_examples() {
-    common::print_topic_start_message("compound data type");
+    log::begin_topic("compound data type");
     tuple_example();
     array_example();
-    common::print_topic_end_message("compound data type");
+    log::end_topic("compound data type");
 }
 
 fn character() {
-    common::print_example_start_message("character");
+    log::start_example("character");
     //character types : single quotes, four bytes in size, represent unicode scalar value
     let ch: char = 'a';
 
     println!("char : {}", ch);
-    common::print_example_end_message("character");
+    log::end_example("character");
 }
 
 fn boolean() {
-    common::print_example_start_message("boolean");
+    log::start_example("boolean");
     // boolean types
     let bool_false: bool = false;
     let bool_true: bool = true;
 
     println!("bool_false : {}", bool_false);
     println!("bool_true : {}", bool_true);
-    common::print_example_end_message("boolean");
+    log::end_example("boolean");
 }
 
 fn float() {
-    common::print_example_start_message("float");
+    log::start_example("float");
     //single precision
     let float_f32: f32 = 3.0;
 
@@ -47,12 +47,12 @@ fn float() {
 
     println!("float_f32 : {}", float_f32);
     println!("float_f64 : {}", float_f64);
-    common::print_example_end_message("float");
+    log::end_example("float");
 
 }
 
 fn signed_integer() {
-    common::print_example_start_message("signed integer");
+    log::start_example("signed integer");
     // integers : signed
     let signed_int_8bit: u8 = 31;
     let signed_int_16bit: u16 = 31;
@@ -68,11 +68,11 @@ fn signed_integer() {
     println!("signed_int_64bit : {}", signed_int_64bit);
     println!("signed_int_128bit : {}", signed_int_128bit);
     println!("signed_int_arch : {}", signed_int_arch);
-    common::print_example_end_message("signed integer");
+    log::end_example("signed integer");
 }
 
 fn unsigned_integer() {
-    common::print_example_start_message("unsigned integer");
+    log::start_example("unsigned integer");
     // integers : unsigned
     let unsigned_int_8bit: i8 = 31;
     let unsigned_int_16bit: i16 = 31;
@@ -88,13 +88,13 @@ fn unsigned_integer() {
     println!("unsigned_int_64bit : {}", unsigned_int_64bit);
     println!("unsigned_int_128bit : {}", unsigned_int_128bit);
     println!("unsigned_int_arch : {}", unsigned_int_arch);
-    common::print_example_end_message("unsigned integer");
+    log::end_example("unsigned integer");
 }
 
 
 
 fn tuple_example() {
-    common::print_example_start_message("tuple");
+    log::start_example("tuple");
     //tuples : group of values with different data types; has fixed length
     let tup1: (i32, f64, u8) = (500, 6.8, 8);
     let tup2 = (501, 7.8, 9);
@@ -118,11 +118,11 @@ fn tuple_example() {
     println!("x : {}, y: {}, z: {}", x, y, z);
 
     println!("k (unit) : {:?}", k);
-    common::print_example_end_message("tuple");
+    log::end_example("tuple");
 }
 
 fn array_example() {
-    common::print_example_start_message("array");
+    log::start_example("array");
     //array : group of values with same data types; has fixed length; data is allocated to stack; not heap
     let arr1 = [0, 2, 3, 4, 5];
     let arr2: [i32; 5] = [6, 7, 8, 9, 10];
@@ -136,5 +136,5 @@ fn array_example() {
     println!("arr3 : {:?}", arr3);
     println!("q1_months : {:?}", q1_months);
     println!("second month : {}", q1_months[1]);
-    common::print_example_end_message("array");
+    log::end_example("array");
 }
