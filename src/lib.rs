@@ -31,6 +31,7 @@ pub fn run_examples() {
     functions::run_function_examples();
     control_flows::run_control_flow_examples();
     vectors::run_vector_examples();
+    strings::run_string_examples();
 
     memory_management::run_memory_management_examples();
     slices::run_slices_examples();
