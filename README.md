@@ -64,6 +64,9 @@ modifying the profile files located at:
         - /home/<user_dir>/.profile
         - /home/<user_dir>/.bashrc
 
+# Naming Conventions
+Please refer to the document [here](https://github.com/bijeshos/learning-rust/blob/master/naming-conventions.md) to know more about the naming conventions to be used in Rust. 
+
 # Useful commands
 
 ## To compile
