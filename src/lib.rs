@@ -15,9 +15,10 @@ mod smart_pointers;
 mod concurrency;
 mod unsafe_pkg;
 mod command_line_args;
-mod common;
+mod log;
 mod vectors;
 mod sub_module_a;
+mod strings;
 
 pub fn run_examples() {
     variables::run_variable_examples();
@@ -30,6 +31,7 @@ pub fn run_examples() {
     functions::run_function_examples();
     control_flows::run_control_flow_examples();
     vectors::run_vector_examples();
+    strings::run_string_examples();
 
     memory_management::run_memory_management_examples();
     slices::run_slices_examples();

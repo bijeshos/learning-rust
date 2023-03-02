@@ -1,16 +1,16 @@
-use crate::common;
+use crate::log;
 
 pub fn run_vector_examples() {
-    common::print_topic_start_message("vector");
+    log::begin_topic("vector");
     declaration_get_push_example();
     iteration_example();
     using_enum_example();
-    common::print_topic_end_message("vector");
+    log::end_topic("vector");
 }
 
 
 fn declaration_get_push_example() {
-    common::print_example_start_message("vector: declaration|get|push");
+    log::start_example("vector: declaration|get|push");
     //declaring a new empty vector of type i32
     let mut v1: Vec<i32> = Vec::new();
 
@@ -39,11 +39,11 @@ fn declaration_get_push_example() {
     println!("third3: {}, third4: {}", third3, third4);
 
     println!("third5: {:?}", third5);
-    common::print_example_end_message("vector: declaration|get|push");
+    log::end_example("vector: declaration|get|push");
 }
 
 fn iteration_example() {
-    common::print_example_start_message("vector iteration");
+    log::start_example("vector iteration");
     //iterating over a vector : using immutable reference to each element
     let v3 = vec![20, 21, 22];
     for element3 in &v3 {
@@ -63,11 +63,11 @@ fn iteration_example() {
     for element4 in v4 {
         println!("element in vector : {}", element4);
     }
-    common::print_example_end_message("vector iteration");
+    log::end_example("vector iteration");
 }
 
 fn using_enum_example() {
-    common::print_example_start_message("vector using_enum");
+    log::start_example("vector using_enum");
     #[derive(Debug)]
     enum Data{
         Int(i32),
@@ -82,5 +82,5 @@ fn using_enum_example() {
     ];
     println!("vector: {:?}",v);
     //dbg!(v);
-    common::print_example_end_message("vector using_enum");
+    log::end_example("vector using_enum");
 }
