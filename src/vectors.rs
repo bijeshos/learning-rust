@@ -69,7 +69,7 @@ fn iteration_example() {
 fn using_enum_example() {
     log::start_example("vector using_enum");
     #[derive(Debug)]
-    enum Data{
+    enum Data {
         Int(i32),
         Float(f32),
         Text(String),
@@ -80,7 +80,7 @@ fn using_enum_example() {
         Data::Float(5.0),
         Data::Text(String::from("6xx")),
     ];
-    println!("vector: {:?}",v);
+    println!("vector: {:?}", v);
     //dbg!(v);
     log::end_example("vector using_enum");
 }
