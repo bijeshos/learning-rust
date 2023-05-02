@@ -1,4 +1,4 @@
-pub fn run_structs_examples(){
+pub fn run_structs_examples() {
     println!("-----------");
     println!("structs_examples: not implemented yet")
 }

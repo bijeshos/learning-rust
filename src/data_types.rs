@@ -48,7 +48,6 @@ fn float() {
     println!("float_f32 : {}", float_f32);
     println!("float_f64 : {}", float_f64);
     log::end_example("float");
-
 }
 
 fn signed_integer() {
@@ -90,7 +89,6 @@ fn unsigned_integer() {
     println!("unsigned_int_arch : {}", unsigned_int_arch);
     log::end_example("unsigned integer");
 }
-
 
 
 fn tuple_example() {

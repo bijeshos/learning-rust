@@ -17,7 +17,6 @@ fn mutable_variable() {
     y = 11;
     println!("value of y (after re-assignment) is: {}", y);
     log::end_example("mutable variable");
-
 }
 
 fn immutable_variable() {
