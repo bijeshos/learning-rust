@@ -1,4 +1,5 @@
 # Naming Conventions
+
 ## Basic
 
 | Item | Convention |
@@ -22,27 +23,28 @@
 
 Conversions should be provided as methods, with names prefixed as follows:
 
-|Prefix|	Cost	|Ownership|
-|--|--|--|
-|as_	|Free	|borrowed -> borrowed|
-|to_	|Expensive	|<ul><li> borrowed -> borrowed</li><li> borrowed -> owned (non-Copy types)</li><li>owned -> owned (Copy types) </li> </ul>|
-|into_	|Variable	|owned -> owned (non-Copy types)|
+|Prefix| Cost |Ownership| |--|--|--| |as_    |Free |borrowed -> borrowed| |to_    |Expensive |<ul><li> borrowed ->
+borrowed</li><li> borrowed -> owned (non-Copy types)</li><li>owned -> owned (Copy types) </li> </ul>| |into_
+|Variable |owned -> owned (non-Copy types)|
 
 - Examples
     - str::as_bytes()
     - Path::to_str
-    - String::into_bytes() 
+    - String::into_bytes()
+
 ## Getter names
+
 - With a few exceptions, the `get_` prefix is not used for getters in Rust code.
 - The `get` naming is used only when there is a single and obvious thing that could reasonably be gotten by a getter
 
 ## Others
+
 - Methods on collections that produce iterators follow iter, iter_mut, into_iter
 - Iterator type names match the methods that produce them
-  - e.g.:
-    - Vec::iter
-    - Vec::iter_mut
-    - Vec::into_iter
+    - e.g.:
+        - Vec::iter
+        - Vec::iter_mut
+        - Vec::into_iter
 - Iterator type names match the methods that produce them
     - e.g.:
         - `Vec::iter` returns `Iter`
@@ -51,7 +53,7 @@ Conversions should be provided as methods, with names prefixed as follows:
         - `BTreeMap::values` returns `Values`
 - Error names
     - use `verb-object-error` word order
-        - e.g.: 
+        - e.g.:
             - `JoinPathsError`
             - `ParseBoolError`
             - `ParseCharError`
